@@ -1,26 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./App.css";
+
+import HelloWord from "./1-HelloWord";
+import IntroducingJSX from "./1-2-IntroducingJSX";
+import RenderingElement from "./1-3-RenderingElements";
+import ErrorBoundaries from "./2-24-ErrorBoundaries";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <ErrorBoundaries>
+          <Route path="/" component={HelloWord} />
+          <Route path="/IntroducingJSX/" component={IntroducingJSX} />
+          <Route path="/RenderingElement/" component={RenderingElement} />
+        </ErrorBoundaries>
+      </Router>
     );
   }
 }
