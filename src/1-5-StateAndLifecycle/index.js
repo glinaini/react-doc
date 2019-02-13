@@ -18,11 +18,11 @@ class StateAndLiftcycle extends PureComponent {
   state = { date: new Date() };
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000);
+    timerID = setInterval(() => this.tick(), 1000);
   }
 
   componentWillUnmount() {
-    clearInterval(this.timerID);
+    clearInterval(timerID);
   }
 
   tick() {
