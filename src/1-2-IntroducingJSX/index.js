@@ -25,8 +25,8 @@ function getGreeting(user) {
 
 // 用JSX指定属性值
 // 在JSX中， class 变成了 className， tabindex 变成了 tabIndex
-const element2 = <div tabIndex="0">11</div>
-const element3 = <img src={user.imgUrl}/>
+// const element2 = <div tabIndex="0">11</div>
+// const element3 = <img src={user.imgUrl}/>
 
 // JSX 指定子元素
 const element4 = (
@@ -40,11 +40,11 @@ const element4 = (
 // const element5 = <h1>{title}</h1>
 
 // JSX 表示对象
-const element6 = (
-    <h1 className="greeting">
-        Hello, world!
-    </h1>
-)
+// const element6 = (
+//     <h1 className="greeting">
+//         Hello, world!
+//     </h1>
+// )
 
 const name = "Josh Perez";
 const element = <h1>Hello, {name}</h1>;

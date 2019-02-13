@@ -6,7 +6,8 @@ import HelloWord from "./1-HelloWord";
 import IntroducingJSX from "./1-2-IntroducingJSX";
 import RenderingElement from "./1-3-RenderingElements";
 import ComponentsAndProps from "./1-4-ComponentsAndProps";
-import StateAndLiftcycle from "./1-5-StateAndLifecycle"
+import StateAndLiftcycle from "./1-5-StateAndLifecycle";
+import HandlingEvents from "./1-6-HandlingEvents";
 import ErrorBoundaries from "./2-24-ErrorBoundaries";
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path="/RenderingElement/" component={RenderingElement} />
           <Route path="/ComponentsAndProps/" component={ComponentsAndProps} />
           <Route path="/StateAndLiftcycle/" component={StateAndLiftcycle} />
+          <Route path="/HandlingEvents/" component={HandlingEvents} />
         </ErrorBoundaries>
       </Router>
     );
