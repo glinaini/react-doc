@@ -8,6 +8,10 @@ import RenderingElement from "./1-3-RenderingElements";
 import ComponentsAndProps from "./1-4-ComponentsAndProps";
 import StateAndLiftcycle from "./1-5-StateAndLifecycle";
 import HandlingEvents from "./1-6-HandlingEvents";
+import ConditionalRendering from "./1-7-ConditionalRendering";
+import ListAndKey from "./1-8-ListsAndKey";
+import Forms from "./1-9-Forms";
+
 import ErrorBoundaries from "./2-24-ErrorBoundaries";
 
 class App extends Component {
@@ -21,6 +25,9 @@ class App extends Component {
           <Route path="/ComponentsAndProps/" component={ComponentsAndProps} />
           <Route path="/StateAndLiftcycle/" component={StateAndLiftcycle} />
           <Route path="/HandlingEvents/" component={HandlingEvents} />
+          <Route path="/ConditionalRendering" component={ConditionalRendering}/>
+          <Route path="/ListAndKey" component={ListAndKey}/>
+          <Route path="/Forms" component={Forms}/>
         </ErrorBoundaries>
       </Router>
     );
