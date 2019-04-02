@@ -11,6 +11,7 @@ import HandlingEvents from "./1-6-HandlingEvents";
 import ConditionalRendering from "./1-7-ConditionalRendering";
 import ListAndKey from "./1-8-ListsAndKey";
 import Forms from "./1-9-Forms";
+import LiftingState from "./1-10LiftingStateUp/LiftingState"
 
 import ErrorBoundaries from "./2-24-ErrorBoundaries";
 
@@ -28,6 +29,7 @@ class App extends Component {
           <Route path="/ConditionalRendering" component={ConditionalRendering}/>
           <Route path="/ListAndKey" component={ListAndKey}/>
           <Route path="/Forms" component={Forms}/>
+          <Route path="/LiftingState" component={LiftingState}/>
         </ErrorBoundaries>
       </Router>
     );
