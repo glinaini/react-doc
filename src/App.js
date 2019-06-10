@@ -12,6 +12,9 @@ import ConditionalRendering from "./1-7-ConditionalRendering";
 import ListAndKey from "./1-8-ListsAndKey";
 import Forms from "./1-9-Forms";
 import LiftingState from "./1-10LiftingStateUp/LiftingState"
+import CompositionVsInheritance from "./1-11-CompositionVsInheritance"
+import ThinkingInReact from './1-12-ThinkingInReact'
+import ISAccessibility from './2-1-Accessibility'
 
 import ErrorBoundaries from "./2-24-ErrorBoundaries";
 
@@ -30,6 +33,9 @@ class App extends Component {
           <Route path="/ListAndKey" component={ListAndKey}/>
           <Route path="/Forms" component={Forms}/>
           <Route path="/LiftingState" component={LiftingState}/>
+          <Route path="/CompositionVsInheritance" component={CompositionVsInheritance}/>
+          <Route path='/ThinkingInReact' component={ThinkingInReact}/>
+          <Route path='/ISAccessibility' component={ISAccessibility}/>
         </ErrorBoundaries>
       </Router>
     );

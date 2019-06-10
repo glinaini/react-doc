@@ -47,7 +47,7 @@ export default class LiftingState extends Component {
     const fahrenheit =
       scale === "c" ? tryConvert(temperature, toFahrenheit) : temperature;
     return (
-      <div>
+      <div style={{width: 350}}>
         <p>状态提升 (Lifting State Up)</p>
 
         {/* <fieldset>
