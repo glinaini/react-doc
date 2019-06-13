@@ -15,6 +15,7 @@ import LiftingState from "./1-10LiftingStateUp/LiftingState"
 import CompositionVsInheritance from "./1-11-CompositionVsInheritance"
 import ThinkingInReact from './1-12-ThinkingInReact'
 import ISAccessibility from './2-1-Accessibility'
+import RefsAndDomComponent from './2-15-refsAndDom'
 
 import ErrorBoundaries from "./2-24-ErrorBoundaries";
 
@@ -36,6 +37,7 @@ class App extends Component {
           <Route path="/CompositionVsInheritance" component={CompositionVsInheritance}/>
           <Route path='/ThinkingInReact' component={ThinkingInReact}/>
           <Route path='/ISAccessibility' component={ISAccessibility}/>
+          <Route path='/RefsAndDomComponent' component={RefsAndDomComponent}/>
         </ErrorBoundaries>
       </Router>
     );
